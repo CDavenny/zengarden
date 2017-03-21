@@ -1,0 +1,358 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+#css-zen-garden {
+    max-width: 65%;
+    margin: auto;
+  background-image: url("http://i.imgur.com/Cx41TAS.jpg");
+  background-repeat: repeat-y;
+  background-position: right;
+  background-size: 20%;
+}
+h1{
+  font-size: 3em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+h1, h2, h3 {
+  font-family: helvetica;
+  font-style: oblique;
+  margin-top: 2px;
+  max-width: 100%;
+}
+
+p, a {
+  font-family: open sans;
+  text-align: justify;
+}
+p {
+  line-height: 1.5;
+}
+.summary, .preamble {
+  max-width: 100%;
+  padding: 2px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.preamble {
+    background-color: orange;
+  border-radius: 20px;
+  text-align: justify;
+}
+.main {
+  position: relative;
+  text-align: justify;
+ 
+}
+.explanation, .participation, .benefits, .requirements {
+  max-width: 47%;
+  padding: 5px;
+  background-color: orange;
+  border-radius:20px;
+  margin-bottom: 15px;
+  text-align: justify;
+  }
+.explanation, .benefits {
+  float: left;
+}
+.participation, .requirements {
+  float: right;
+}
+.requirements {
+  margin-bottom: 50px;
+}
+.sidebar {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  background-color: orange;
+  border-radius: 20px;
+  max-width: 15%;
+  margin-left: 2px;
+  padding: 1px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border: 1px tomato;
+  max-height: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: orange;
+  color: tomato; 
+  z-index: 1;
+  }
+footer a {
+  color: tomato;
+  padding: 25px;
+  font-family: helvetica !important;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  font-family: helvetica;
+  font-size: .7em;
+  font-weight: 500;
+}
+.select-a-design li,  .resourcesul li, .archivesul li{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.resourcesul li, .archivesul li{
+  align-content: center;
+  justify-content: center;
+}
+  
+
+.indicator{
+  margin: 0;
+  padding: 0;
+}
+.design-name[href="/221/"], .designer-name[href*="andrew"],.design-name[href="/220/"], .designer-name[href*="danielmall"], .design-name[href="/219/"], .designer-name[href*="steffen"], .design-name[href="/218/"], .designer-name[href*="trent"], .design-name[href="/217/"], .designer-name[href*="elliot"], .design-name[href="/216/"], .designer-name[href*="jeremy"], .design-name[href="/215/"], .designer-name[href*="meltmedia"], .design-name[href="/214/"], .designer-name[href*="mezzo"], .zen-faq a, .zen-submit a, .css-resources a, .view-css a, .zen-translations a, .next a, .viewall a{
+  border-radius: 20px;
+  border: 2px solid white;
+  margin-bottom: 5px;
+  height: 6.1vw;
+  width: 46% !important;
+  text-align: center;
+}
+.design-name[href="/221/"], .designer-name[href*="andrew"], .design-name[href="/215/"], .designer-name[href*="meltmedia"],.zen-faq a{
+  background-color: rgba(38, 207, 204, 1);
+}
+.design-name[href="/220/"], .designer-name[href*="danielmall"], .design-name[href="/214/"], .designer-name[href*="mezzo"], .zen-submit a {
+  background-color: rgba(38, 207, 97, 1);
+}
+.design-name[href="/219/"], .designer-name[href*="steffen"], .next a ,  .zen-translations a  {
+  background-color: rgba(38, 207, 204, 1);
+}
+.design-name[href="/218/"], .designer-name[href*="trent"], .viewall a {
+  background-color: rgba(38, 207, 97, 1);
+}
+.design-name[href="/217/"], .designer-name[href*="elliot"], .view-css a  {
+  background-color: rgba(38, 207, 204, 1);
+}
+.design-name[href="/216/"], .designer-name[href*="jeremy"] {
+  background-color: rgba(38, 207, 97, 1);
+}
+li a{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  font-family: helvetica !important;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+a:link {
+  color: tomato;
+  font-family: helvetica;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+a {
+  color: tomato;
+  font-family: helvetica !important;
+}
+.vulfy {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  max-width: 14%;
+  margin-left: 10px
+}
+li a:hover {
+  transform: scale(1.1)
+}
+
+
+@media (max-width: 1060px) 
+{
+#css-zen-garden {
+    max-width: 65%;
+    margin-right: 6%;
+  background-image: url("http://i.imgur.com/Cx41TAS.jpg");
+  background-repeat: repeat-y;
+  background-position: right;
+  background-size: 20%;
+}
+  .sidebar{
+    max-width: 27%;
+    top: 190px;
+    
+  }
+  .summary, .preamble {
+  max-width: 100%;
+  padding: 2px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.preamble {
+   
+  text-align: center;
+}
+.main {
+  position: relative;
+  text-align: justify;
+ 
+}
+.explanation, .participation, .benefits, .requirements {
+  max-width: 100%;
+  padding: 5px;
+  border: 1px white;
+  margin-bottom: 15px;;
+  text-align: center;
+  }
+  
+  .select, .archives, .resources{
+    margin-bottom: 50px;
+    padding-bottom: 0;
+  }
+  
+  .archives, .resources, .sidebar{
+    margin-top: 75px;
+  }
+  .design-name[href="/221/"], .designer-name[href*="andrew"],.design-name[href="/220/"], .designer-name[href*="danielmall"], .design-name[href="/219/"], .designer-name[href*="steffen"], .design-name[href="/218/"], .designer-name[href*="trent"], .design-name[href="/217/"], .designer-name[href*="elliot"], .design-name[href="/216/"], .designer-name[href*="jeremy"], .design-name[href="/215/"], .designer-name[href*="meltmedia"], .design-name[href="/214/"], .designer-name[href*="mezzo"], .zen-faq a, .zen-submit a, .css-resources a, .view-css a, .zen-translations a, .next a, .viewall a{
+  border-radius: 20px;
+  border: 2px solid white;
+  margin-bottom: 5px;
+  height: 9.8vw;
+  width: 46% !important;
+  text-align: center;
+}
+  .requirements {
+    margin-bottom: 75px;
+  }
+  .vulfy {
+    max-width: 18%;
+  }
+  
+  }
+@media (max-width: 650px) 
+{
+ #css-zen-garden {
+  max-width: 90%;
+  margin: auto;
+  background-image: url("http://i.imgur.com/Cx41TAS.jpg");
+  background-repeat: repeat-y;
+  background-position: right;
+  background-size: 40%;
+  text-align: center;
+}
+.summary, .preamble {
+  max-width: 100%;
+  padding: 2px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.preamble {
+    border: 1px black white;
+  text-align: center;
+}
+.main {
+  position: relative;
+  text-align: justify;
+ 
+}
+.explanation, .participation, .benefits, .requirements {
+  max-width: 100%;
+  padding: 5px;
+  border: 1px white solid;
+  margin-bottom: 15px;;
+  text-align: center;
+  }
+  
+  .select, .archives, .resources{
+    margin-bottom: 50px;
+    padding-bottom: 0;
+  }
+  
+  .archives, .resources, .sidebar{
+    margin-top: 75px;
+  }
+  .sidebar {
+    border: none;
+    position: relative;
+    max-width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    top: 70px;
+    margin-bottom: 100%;
+  }
+ 
+  .vulfy {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    align: center;
+    top: 15px;
+  }
+  p a {
+    font-size: 1em;
+  }
+  footer a {
+  color: white;
+  padding: 2px;
+  font-family: helvetica !important;
+  font-size: 1em;
+  }
+  a {
+    font-size: 1.2em;
+  }
+  footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  max-height: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: orange;
+  color: tomato; 
+  z-index: 1;
+    padding-bottom: 10px
+  }
+p {
+  line-height: 1.5;
+}
+.select-a-design li{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+  .design-name[href="/221/"], .designer-name[href*="andrew"],.design-name[href="/220/"], .designer-name[href*="danielmall"], .design-name[href="/219/"], .designer-name[href*="steffen"], .design-name[href="/218/"], .designer-name[href*="trent"], .design-name[href="/217/"], .designer-name[href*="elliot"], .design-name[href="/216/"], .designer-name[href*="jeremy"], .design-name[href="/215/"], .designer-name[href*="meltmedia"], .design-name[href="/214/"], .designer-name[href*="mezzo"], .next a, .viewall a, .view-css a, .css-resources a, .zen-faq a, .zen-submit a, .zen-translations a{
+  border-radius: 9%;
+  border: 2px solid white;
+  margin-bottom: 25px;
+  height: 35vw;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+  width: 40%;
+  text-align: center;
+}
+
+}
